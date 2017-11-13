@@ -46,10 +46,6 @@ plugins=(autojump aws brew bundler git mvn osx svn terraform rbenv golang colore
 precmd () {print -Pn "\e]2; %~/ \a"}
 preexec () {print -Pn "\e]2; %~/ \a"}
 
-source $ZSH/oh-my-zsh.sh
-source ~/.aliases
-source ~/.zshrc.local
-
 # Customize to your needs...
 
 # Prepend /usr/local so brew installs take precedence
@@ -57,6 +53,10 @@ export PATH=/usr/local/sbin:/usr/local/bin:~/bin:$PATH
 
 export GOPATH=~/code/gopath
 export PATH=$PATH:$GOPATH/bin
+
+source $ZSH/oh-my-zsh.sh
+source ~/.aliases
+source ~/.zshrc.local
 
 # rustup
 source $HOME/.cargo/env
