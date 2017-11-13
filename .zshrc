@@ -61,10 +61,6 @@ export PATH=$PATH:$GOPATH/bin
 # rustup
 source $HOME/.cargo/env
 
-# gcloud
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 alias mvn=mvn-color
