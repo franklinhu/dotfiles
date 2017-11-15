@@ -21,6 +21,7 @@
     m = merge
     st = status -sb
     status = status -sb
+    bc = "!git branch --merged master | tr -d ' *' | grep -v '^master$' | xargs -I{} git branch --delete {}"
 [help]
     autocorrect = 1
 [rerere]
