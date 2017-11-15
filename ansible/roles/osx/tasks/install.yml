@@ -13,12 +13,12 @@
     - iftop
     - jq
     - mtr
-    - multirust
     - npm
     - openssl
     - packer
     - reattach-to-user-namespace
     - rbenv
+    - rustup
     - sbt
     - scala
     - terminal-notifier
