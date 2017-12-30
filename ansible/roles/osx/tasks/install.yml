@@ -80,4 +80,5 @@
     - { repo: 'derekwyatt/vim-scala', dest: 'vim-scala' }
     - { repo: 'rodjek/vim-puppet', dest: 'vim-puppet' }
     - { repo: 'bronson/vim-trailing-whitespace', dest: 'vim-trailing-whitespace' }
+    - { repo: 'keith/swift.vim', dest: 'swift.vim' }
 
