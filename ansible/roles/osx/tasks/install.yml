@@ -63,13 +63,16 @@
 - name: install pathogen
   git: repo=https://github.com/tpope/vim-pathogen dest=~/.vim/vim-pathogen
   register: pathogen_install
+  tags: [vim]
 
 - name: link pathogen
   file: src=~/.vim/vim-pathogen/autoload dest=~/.vim/autoload state=link
   when: pathogen_install
+  tags: [vim]
 
 - name: install vim pathogen packages
   git: repo=https://github.com/{{ item.repo }} dest=~/.vim/bundle/{{ item.dest }}
+  tags: [vim]
   with_items:
     - { repo: 'scrooloose/syntastic', dest: 'syntastic' }
     - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
