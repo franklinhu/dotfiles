@@ -77,3 +77,6 @@ endif
 
 "" Enable js syntax for json files
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+"" Disable version warning for vim-go
+let g:go_version_warning = 0
