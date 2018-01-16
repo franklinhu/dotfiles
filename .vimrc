@@ -30,6 +30,7 @@ set showmatch    " Highlights matching brackets
 set incsearch    " Incremental search
 set ignorecase   " searches are case insensitive
 set smartcase    " ... unless they contain one capital
+set wildignorecase " Wildcard searches (e.g. for file names) are case insensitive
 
 set smartindent
 set autoindent " If indented, newlines will be indented
