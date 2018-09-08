@@ -40,7 +40,22 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump aws brew bundler git mvn osx svn terraform rbenv golang colored-man-pages tmux rust)
+plugins=(
+  autojump
+  aws
+  brew
+  bundler
+  git
+  mvn
+  osx
+  svn
+  terraform
+  rbenv
+  golang
+  colored-man-pages
+  tmux
+  rust
+)
 
 # On OSX opens a new tab in the current directory
 precmd () {print -Pn "\e]2; %~/ \a"}
