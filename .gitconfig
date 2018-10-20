@@ -34,5 +34,7 @@
 	pushdefault = origin
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[remote.origin]
+  prune = true
 [pager]
   branch = false
