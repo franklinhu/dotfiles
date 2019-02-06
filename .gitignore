@@ -4,3 +4,4 @@
 *.iml
 .idea/*
 ansible/laptop.retry
+.vscode
