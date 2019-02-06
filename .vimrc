@@ -13,6 +13,12 @@ set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
+"" Use Python syntax highlighting for skycfg files
+augroup sky_ft
+  au!
+  autocmd BufNewFile,BufRead *.sky set syntax=python
+augroup END
+
 set encoding=utf-8
 set showcmd
 
