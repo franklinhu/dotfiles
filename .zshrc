@@ -43,6 +43,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   autojump
   aws
+  bazel
   brew
   bundler
   git
@@ -55,6 +56,7 @@ plugins=(
   colored-man-pages
   tmux
   rust
+  zsh-nodenv
 )
 
 # On OSX opens a new tab in the current directory
