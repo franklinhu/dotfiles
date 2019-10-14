@@ -82,3 +82,6 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 alias mvn=mvn-color
 alias tmux='tmux -u'
+
+disable -r time
+alias time='time -p'
