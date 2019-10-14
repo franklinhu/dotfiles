@@ -19,6 +19,12 @@ augroup sky_ft
   autocmd BufNewFile,BufRead *.sky set syntax=python
 augroup END
 
+"" Use Ruby syntax highlighting for .rbi files
+augroup rbi_ft
+  au!
+  autocmd BufNewFile,BufRead *.rbi set syntax=ruby
+augroup END
+
 set encoding=utf-8
 set showcmd
 
