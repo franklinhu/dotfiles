@@ -15,13 +15,18 @@
     b = branch
     co = checkout
     f = fetch
-    lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=rfc
+    lg = log --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=rfc
+    lgm = "!git lg --reverse master..HEAD"
     lgclean = log --graph --pretty=format:'%h %an -%d %s (%cr)' --abbrev-commit --date=relative
     log1 = log --format=oneline
     m = merge
-    st = status -sb
-    status = status -sb
+    st = status -sbuno
+    status = status -sbuno
     bc = "!git branch --merged master | tr -d ' *' | grep -v '^master$' | xargs -I{} git branch --delete {}"
+    g = !git grep "$@" -- "./*" ":!vendor/**/*" #
+    pr = "!pr() { ~/stripe/pay-server/cibot/bin/git-pr $*; }; pr"
+    nb = "!nb() { git checkout $GIT_DEFAULT_BRANCH; git pull; git checkout -b $1; }; nb"
+    rbm = "!rbm() { git checkout $GIT_DEFAULT_BRANCH; git pull; git checkout -; git rebase $GIT_DEFAULT_BRANCH; }; rbm"
 [help]
     autocorrect = 1
 [rerere]
@@ -38,3 +43,8 @@
   prune = true
 [pager]
   branch = false
+[grep]
+  extendedRegexp = true
+  threads = 16
+[diff]
+  renameLimit = 1500

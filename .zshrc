@@ -85,3 +85,5 @@ alias tmux='tmux -u'
 
 disable -r time
 alias time='time -p'
+
+export GIT_DEFAULT_BRANCH=master
