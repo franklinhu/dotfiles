@@ -71,6 +71,8 @@ export PATH=/usr/local/sbin:/usr/local/bin:~/bin:$PATH
 export GOPATH=~/code/gopath
 export PATH=$PATH:$GOPATH/bin
 
+export GIT_DEFAULT_BRANCH=master
+
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.zshrc.local
@@ -86,4 +88,3 @@ alias tmux='tmux -u'
 disable -r time
 alias time='time -p'
 
-export GIT_DEFAULT_BRANCH=master
