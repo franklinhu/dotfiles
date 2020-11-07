@@ -26,7 +26,7 @@
     g = !git grep "$@" -- "./*" ":!vendor/**/*" #
     pr = "!pr() { ~/stripe/pay-server/cibot/bin/git-pr $*; }; pr"
     nb = "!nb() { git checkout $GIT_DEFAULT_BRANCH; git pull; git checkout -b $1; }; nb"
-    rbm = "!rbm() { git checkout $GIT_DEFAULT_BRANCH; git pull; git checkout -; git rebase $GIT_DEFAULT_BRANCH; }; rbm"
+    rbm = "!rbm() { git checkout $GIT_DEFAULT_BRANCH; git pull; git checkout -; git rebase $GIT_DEFAULT_BRANCH ${@}; }; rbm \"$@\""
 [help]
     autocorrect = 1
 [rerere]
